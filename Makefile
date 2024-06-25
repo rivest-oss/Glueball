@@ -4,7 +4,9 @@ MKDIR		= mkdir -p
 CXX			= g++
 CXXFLAGS	= -std=c++17 -Wall -Wextra -Wpedantic
 CXXFLAGS	+= `pkg-config openssl --cflags`
+CXXFLAGS	+= `pkg-config sqlite3 --cflags`
 LDFLAGS		= `pkg-config openssl --libs`
+LDFLAGS		+= `pkg-config sqlite3 --libs`
 
 CPPCHECK	= cppcheck
 CLANGXX		= clang++
