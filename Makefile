@@ -13,15 +13,15 @@ CLANGXX		= clang++
 VALGRIND	= valgrind
 
 ifeq ($(origin DEBUG), environment)
-	CXXFLAGS += -Og -g -DGLUEBALL_DEBUG
+	CXXFLAGS += -Og -g -DPORTGLUE_DEBUG
 else
 	CXXFLAGS += -O2
 endif
 
-all: glueball
+all: portglue
 
 clean:
-	$(RM) ./out/glueball
+	$(RM) ./out/portglue
 
 check:
 	$(CPPCHECK) --language=c++ --std=c++17 ./src/main.c++
@@ -30,13 +30,13 @@ check:
 		./src/main.c++ \
 		$(LDFLAGS)
 
-glueball:
+portglue:
 	$(MKDIR) ./out/
-	$(CXX) $(CXXFLAGS) -o ./out/glueball ./src/main.c++ $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) -o ./out/portglue ./src/main.c++ $(LDFLAGS)
 
 test:
 	$(VALGRIND) \
 		--leak-check=full \
 		--show-leak-kinds=all \
 		--track-origins=yes \
-		./out/glueball
+		./out/portglue

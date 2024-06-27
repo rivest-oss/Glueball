@@ -1,10 +1,10 @@
-#ifndef __glueball__misc__config__cxx__
-#define __glueball__misc__config__cxx__
+#ifndef __portglue__misc__config__cxx__
+#define __portglue__misc__config__cxx__
 
 #include "config.h"
 #include <cstring>
 
-namespace Glueball {
+namespace Portglue {
 	conf_args_t conf_args = {
 		nullptr,
 		false,

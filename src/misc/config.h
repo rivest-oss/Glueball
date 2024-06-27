@@ -1,7 +1,7 @@
-#ifndef __glueball__misc__config__h__
-#define __glueball__misc__config__h__
+#ifndef __portglue__misc__config__h__
+#define __portglue__misc__config__h__
 
-namespace Glueball {
+namespace Portglue {
 	typedef struct {
 		const char	*error;
 

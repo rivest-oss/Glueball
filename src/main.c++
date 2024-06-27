@@ -6,8 +6,8 @@
 int main(int argc, const char **argv) {
 	std::printf("Hello, world!\n");
 
-	if(Glueball::read_from_args(argc, argv) < 0) {
-		std::fprintf(stderr, "Error: %s\n", Glueball::conf_args.error);
+	if(Portglue::read_from_args(argc, argv) < 0) {
+		std::fprintf(stderr, "Error: %s\n", Portglue::conf_args.error);
 		return 1;
 	}
 	
