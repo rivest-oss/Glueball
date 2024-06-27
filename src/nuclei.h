@@ -1,9 +1,9 @@
-#ifndef __glueball__nuclei__h__
-#define __glueball__nuclei__h__
+#ifndef __portglue__nuclei__h__
+#define __portglue__nuclei__h__
 
 #include <cstdint>
 
-namespace Glueball {
+namespace Portglue {
 	typedef uint8_t u8;
 	typedef uint16_t u16;
 	typedef uint32_t u32;
