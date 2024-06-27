@@ -1,7 +1,7 @@
-#ifndef __glueball__crypt__rsa__h__
-#define __glueball__crypt__rsa__h__
+#ifndef __portglue__crypt__rsa__h__
+#define __portglue__crypt__rsa__h__
 
-namespace Glueball {
+namespace Portglue {
 };
 
 #endif
