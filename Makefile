@@ -8,10 +8,8 @@ TARGET		= ./out/portglue
 CXX			= g++
 CXXFLAGS	= -std=c++17 -Wall -Wextra -Wpedantic
 CXXFLAGS	+= `pkg-config openssl --cflags`
-CXXFLAGS	+= `pkg-config sqlite3 --cflags`
 LD			= $(CXX)
 LDFLAGS		= `pkg-config openssl --libs`
-LDFLAGS		+= `pkg-config sqlite3 --libs`
 
 CPPCHECK	= cppcheck
 CLANGXX		= clang++

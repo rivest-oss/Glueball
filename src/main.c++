@@ -1,7 +1,5 @@
 #include "misc/config.h"
-
 #include <cstdio>
-#include <sqlite3.h>
 
 int main(int argc, const char **argv) {
 	std::printf("Hello, world!\n");
