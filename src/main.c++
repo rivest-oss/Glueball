@@ -1,4 +1,4 @@
-#include "misc/config.c++"
+#include "misc/config.h"
 
 #include <cstdio>
 #include <sqlite3.h>

@@ -2,6 +2,7 @@
 #define __portglue__crypt__rsa__h__
 
 namespace Portglue {
+	class RSAKey {};
 };
 
 #endif
